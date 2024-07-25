@@ -14,6 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="nav-container">
+      <div className="logo-box">LOGO</div>
       <ul className="desktop-menu">
         {menuItems.map((menu, index) => {
           return (
