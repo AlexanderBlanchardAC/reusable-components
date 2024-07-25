@@ -1,50 +1,55 @@
 body {
     display: flex;
-}
-a {
+  }
+  
+  a {
     text-decoration: none;
     color: inherit;
-}
-
-ul {
+  }
+  
+  ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-li a:active {
+  }
+  
+  li a:active {
     text-decoration: none;
-}
-
-.nav-container {
+  }
+  
+  .nav-container {
     display: flex;
     width: 100vw;
     height: 20vh;
     align-items: center;
-}
-
-.logo-box {
+    padding: 1em;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .logo-box {
     height: 10vh;
     width: 10vw;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.desktop-menu {
+  }
+  
+  .desktop-menu {
     display: flex;
     width: 80vw;
     height: 10vh;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.mobile-menu-container {
+  }
+  
+  .mobile-menu-container {
     display: none;
     position: relative;
-}
-
-.mobile-menu {
+    align-items: center;
+  }
+  
+  .mobile-menu {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -56,13 +61,10 @@ li a:active {
     width: 20vw;
     background-color: #333;
     z-index: 1000;
-} 
-
-.toggle-btn {
+  }
+  
+  .toggle-btn {
     display: none;
-    position: fixed;
-    top: 10px;
-    right: 10px;
     background-color: white;
     color: #333;
     border: none;
@@ -70,33 +72,46 @@ li a:active {
     font-size: 1em;
     cursor: pointer;
     z-index: 1001;
-}
-
-.menu-item {
+  }
+  
+  .menu-item {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
     margin: 20px 0;
-}
-
-@media only screen and (max-width: 600px) {
+  }
+  
+  @media only screen and (max-width: 600px) {
     .desktop-menu {
-        display: none;
+      display: none;
     }
-   .toggle-btn {
-    display: flex;
-    border: 2px solid #333;
-    border-radius: 7px;
-   }
-   .mobile-menu-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-   }
+    .mobile-menu-container {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      align-items: center;
+    }
+    .toggle-btn {
+      display: flex;
+      border: 2px solid #333;
+      border-radius: 7px;
+      align-self: center;
+      margin-right: 0.5em;
+    }
+    .mobile-menu-container.open .mobile-menu {
+      display: flex;
+      color: white;
+    }
+    .nav-container {
+      align-items: center;
+      height: 20vh;
+      position: relative;
+      justify-content: space-between;
+    }
 
-   .mobile-menu {
-    display: flex;
-    color: white;
-   }
-}
+    .logo-box {
+        margin-left: 0.5em;
+    }
+  }
+  

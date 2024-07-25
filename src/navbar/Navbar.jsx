@@ -24,7 +24,7 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <div className="mobile-menu-container">
+      <div className={`mobile-menu-container ${dropdownOpen ? "open" : ""}`}>
         <button className="toggle-btn" onClick={toggleDropDown}>
           {dropdownOpen ? "X" : "Menu"}
         </button>
