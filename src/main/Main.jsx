@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./main.css";
 import ActionBox from "../actionBox/ActionBox";
+import Paragraph from "../paragraph/Paragraph";
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
         <ActionBox />
         <ActionBox />
       </div>
+      <Paragraph />
     </div>
   );
 };
