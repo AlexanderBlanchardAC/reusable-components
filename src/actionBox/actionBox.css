@@ -1,0 +1,9 @@
+.action-box-container {
+    border: 2px solid red;
+    width: 30vw;
+    height: 25vh;
+}
+
+h1 {
+    font-weight: 400;
+}

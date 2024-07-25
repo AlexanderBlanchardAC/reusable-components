@@ -1,0 +1,13 @@
+.action-box-one {
+    border: 2px solid purple;
+    width: 30vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+

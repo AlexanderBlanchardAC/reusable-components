@@ -1,0 +1,26 @@
+.header-container {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+}
+
+.main-nav {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container {
+    width: 20vh;
+    height: 20vh;
+}
+
+.nav-container {
+    width: 80vw;
+}
+
+.title-container {
+    text-align: center;
+    font-size: 3em;
+}
